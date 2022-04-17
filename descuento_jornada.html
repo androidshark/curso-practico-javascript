@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento por Jornada</title>
+    <script src="./descuento_jornada.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calcula el Descuento Según el Plan de Estudio</h1>
+    </header>
+    <section>
+        <label for="matricula">Digite el valor de la matricula</label>
+        <input type="text" id="matricula">
+        <br>
+        <br>
+        <label for="jornada">Seleccione la jornada</label>
+        <select name="jornada" id="jornada">
+            <option value="_" selected>Seleccione una Jornada</option>
+            <option value="DI">Díurna</option>
+            <option value="TA">Tarde</option>
+            <option value="NO">Noche</option>
+            <option value="ES">Especial</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="calcularDescuento()">Calcular Valor Total</button>
+        <br>
+        <h3>El Valor Total a Pagar es:</h3>
+        <p id="valorTotal"></p>
+    </section>
+
+
+</body>
+</html>
